@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- nav  -->
+    <nav class="navbar-main fixed-top">
+        <div class="searche-inp" id="inp">
+            <input type="text" name="text" id="text" placeholder="Searche">
+        </div>
+        <div class="brand">
+            <!-- Icon -->
+            <a href="index.html">
+                <img src="assets/Logo-black.png" class="brand-img" alt="">
+            </a>
+        </div>
+
+        <!-- list -->
+        <ul class="nav-list">
+            <li class="list"> <i class="fa-solid fa-arrow-down arrow"></i><a href="#" class="links">Home</a></li>
+            <li class="list"> <i class="fa-solid fa-arrow-down arrow"></i><a href="#" class="links">About</a></li>
+            <li class="list"> <i class="fa-solid fa-arrow-down arrow"></i><a href="#" class="links">Services</a></li>
+            <li class="list"> <i class="fa-solid fa-arrow-down arrow"></i><a href="#" class="links">Contact</a></li>
+        </ul>
+
+        <!-- searche -->
+        <div class="searche" id="searche" onclick="serche()">
+            <i class="fa-solid fa-magnifying-glass searche-ic" id="searche-ic"></i>
+            <i class="fa-solid fa-x close-searche hide" id="close-searche"></i>
+        </div>
+
+        <!-- icons -->
+        <div class="icons" id="icon-div" onclick="toggle()">
+            <i class="fa-solid fa-bars open" id="open"></i>
+            <i class="fa-solid fa-x close " id="close"></i>
+        </div>
+    </nav>
+    <div class="hei"></div>
+
+    <!-- carsoul -->
+    <div id="carouselExampleDark" class="carousel carousel-light slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active color"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" class="color" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" class="color" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="car-head animate__fadeInRight"><span>BUILDAY</span> / Construction & Building Themes</h1>
+                    <p class="car-p animate__fadeInRight">Make Your Dream Come True</p>
+                    <button class="button animate__fadeInRight">View Project</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="car-head animate__fadeInRight"><span>OUR PLAN</span>/Broad vision</h1>
+                    <p class="car-p animate__fadeInRight">Careful thought. Hand-crafted design</p>
+                    <button class="button animate__fadeInRight">View Project</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1 class="car-head animate__fadeInRight"><span>OUR GOAL</span> / Each Project That We Work On</h1>
+                    <p class="car-p animate__fadeInRight">Always dedicated and devoted.</p>
+                    <button class="button animate__fadeInRight">View Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="social-item">
+            <h1>Main Office</h1>
+            <p>3826 Turnpike Drive, Athens, AL, 35613</p>
+        </div>
+        <div class="social-item">
+            <h1>Phone</h1>
+            <p>256-434-3320 / 423-152-7820</p>
+        </div>
+        <div class="social-item social-iconss">
+            <h1>Social</h1>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f iccc"></i>
+                <i class="fa-brands fa-twitter iccc"></i>
+                <i class="fa-brands fa-gitlab iccc"></i>
+                <i class="fa-brands fa-youtube iccc"></i>
+            </div>
+        </div>
+    </div>
+    <hr class="line-social">
+
+
+    <!-- BUILDAY -->
+    <div class="builday">
+        <div class="builday-content">
+            <div class="builday-head">
+                <h1>Builday Spirit</h1>
+                <p>Welcome to builday construction</p>
+            </div>
+            <p class="builday-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utioyti
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolor.</p>
+            <button class="button">Explore More</button>
+        </div>
+        <div class="secound">
+            <div class="builday-img">
+                <img src="assets/builday.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="about-head">
+            <h1>What we do</h1>
+            <p>Our strong point</p>
+        </div>
+        <div class="about-content">
+            <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utioyti
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolor.</p>
+        </div>
+    </div>
+    <!-- about swiper -->
+    <div class="about-swiper">
+        <img src="assets/abourback.jpg" class="back" alt="">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/swiper1.jpg" class="swiper-img" alt="">
+                    <div class="content">
+                        <h4>House & Building</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/swiper2.jpg" class="swiper-img" alt="">
+                    <div class="content">
+                        <h4>House & Building</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/swiper3.jpg" class="swiper-img" alt="">
+                    <div class="content">
+                        <h4>House & Building</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/swiper4.jpg" class="swiper-img" alt="">
+                    <div class="content">
+                        <h4>House & Building</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- counter -->
+
+    <div class="container" style="height: 150px;"></div>
+
+    <div class="counter ">
+        <div class="counter-head">
+            <h1>Our Achievement</h1>
+            <p>The fun fact number</p>
+        </div>
+        <div class="counter-content">
+            <p class="counter-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+        </div>
+    </div>
+
+
+    <div class="s-cards">
+        <div class="card-foot">
+            <h1><span class="counter" data-goal="20">0</span></h1>
+            <hr class="counter-line">
+            <p>Years experiance</p>
+        </div>
+
+        <div class="card-foot">
+            <h1><span class="counter" data-goal="100">0</span></h1>
+            <hr class="counter-line">
+            <p>Finished Projects</p>
+        </div>
+
+        <div class="card-foot">
+            <h1><span class="counter" data-goal="269">0</span></h1>
+            <hr class="counter-line">
+            <p>Working Hours</p>
+        </div>
+
+        <div class="card-foot">
+            <h1><span class="counter" data-goal="500">0</span></h1>
+            <hr class="counter-line">
+            <p>Happy Clients</p>
+        </div>
+
+    </div>
+
+
+    <div class="project">
+        <div class="project-head">
+            <h1>Lasted Projects</h1>
+            <p>Our Stunning Sorks</p>
+        </div>
+        <div class="project-content">
+            <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco
+            </p>
+            <button class="button">Explore More</button>
+
+        </div>
+    </div>
+    <div class="project-image">
+        <div class="images">
+            <div class="left">
+                <div class="top">
+                    <div class="img-item img-1">
+                        <img src="assets/project1.jpg" alt="">
+                    </div>
+                    <div class="img-item img-2">
+                        <img src="assets/project2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="img-item img-3">
+                    <img src="assets/project3.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-item img-4">
+                    <img src="assets/project4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- team -->
+
+    <div class="team">
+        <div class="team-head">
+            <h1>Our Achievement</h1>
+            <p>The fun fact number</p>
+        </div>
+        <div class="team-content">
+            <p class="team-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do notom eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+        </div>
+    </div>
+
+    <div class="swiper-foot">
+        <div class="swiper mmySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">mego</h1>
+                    <img src="assets/team1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">Olivia</h1>
+                    <img src="assets/team2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">geme</h1>
+                    <img src="assets/team3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">sobhy</h1>
+                    <img src="assets/team4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">Georgina</h1>
+                    <img src="assets/team5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="swiper-h1">Nancy</h1>
+                    <img src="assets/team6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <img src="assets/footer.jpg" alt="">
+        <div class="footer-head">
+            <div class="footer-head-div">
+                <h1>BUILDAY</h1>
+            </div>
+            <div class="navigate">
+                <ul class="footer-list">
+                    <li class="footer-li"><a href="" class="footer-link">Home</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">About</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">Contact</a></li>
+                    <li class="footer-li"><a href="" class="footer-link">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="footer-content">
+            <div class="item">
+                <h1>Our Location</h1>
+                <div class="footer-p">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>3191 Ethels Spring Lake (Highlands), Florida NY</p>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Our Phone Number</h1>
+                <div class="footer-p">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(SA) 919-485-0891 / 919-485-0891</p>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Our Contact Mail</h1>
+                <div class="footer-p">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>buildayforum@bd.com <br>buildayforum@bd.com</p>
+                </div>
+            </div>
+            <div class="item">
+                <h1>Subscribe</h1>
+                <input type="email" name="email" id="email" placeholder="Your email address">
+            </div>
+        </div>
+        <div class="footer-icons">
+            <i class="fa-brands fa-facebook-f icon"></i>
+            <i class="fa-brands fa-twitter icon"></i>
+            <i class="fa-brands fa-gitlab icon"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
